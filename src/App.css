@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+html, body {
+   scroll-behavior: smooth; /* Optional: Add smooth scrolling animation */
+   scroll-padding-top: 0 !important; /* Reset scroll position to the top */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+     --slide:-300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body
+{
+  font-family: 'Urbanist', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#items
+{
+  transform: translate(0vw);
 }
 
-.App-link {
-  color: #61dafb;
+.header-text
+{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button
+{
+    /* border: 2px solid; */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    font-weight: bold;
+     background-color: white;
+     
+}
+
+.popular-item:hover
+{
+    background-color: rgba(1, 1, 1, 0.2);
+}
+
+input
+{
+  font-size: 30px;
+  padding: 1px;
+  width: 500px;
+}
+
+.footer-item-1
+{
+   flex: 2;
+   /* border: 2px solid red; */
+   padding: 15px;
+}
+.footer-item-2
+{
+   flex: 2;
+   /* border: 2px solid lightblue; */
+   padding: 15px;
+}
+
+.footer-item-3
+{
+   flex: 1;
+   padding: 15px;
+   /* border: 2px solid black; */
+}
+
+a:hover
+{
+   transform: translateY(-2px);
+}
+
+a{
+    /* border: 1px solid red; */
+     padding: 4px ;
+     margin: 4px 8px;
+     transition: transform 0.3s;
+}
+
+
+/* Login page */
+#loginPage
+{
+   
+  position: relative;
+}
+
+#loginPage::before{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.6;
+}
+
+#loginPage >div
+{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+
+#cartImg
+{
+   flex: 1;
+   max-width: 150px;
+   
+}
+#cartImgDetail
+{
+  /* flex: 2; */
+}
+
+#WholeItem
+{
+   flex:2;
+}
+
+#summery
+{
+   flex: 1;
+}
+
+
+#sliderMain
+{
+   height: 85vh;
+}
+
+#SingleProductDetail
+{
+   /* max-height: 50vh; */
+}
+
+@media (max-width:700px)
+{
+   
+   .eachDivlide
+   {
+      flex-direction: column;
+      margin: 10px 3%;
+        
+   }
+
+   input
+   {
+     width: 90%;
+   }
+
+   #filterThProduc
+   {
+       flex-direction: column;
+       align-items: center;
+       
+
+   }
+   #SingleProductDetail
+   {
+      flex-direction: column;
+   }
+
+   #loginPageInnderDiv
+   {
+      width: 90%;
+   }
+
+   #CartDiv
+   {
+      flex-direction: column;
+   }
+}
+
+
+.active{
+   background-color: red;
+   transition: background-color 0.4s;
+}
+
+
+
+
+@media (max-width:1000px)
+{
+   #footer
+   {
+      flex-direction: column;
+   }
+}
+
+#items
+{
+    /* transform: translate(-200vw); */
+    transition: transform 0.6s ease-in;
 }

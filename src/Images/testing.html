@@ -1,0 +1,28 @@
+<html>
+  <body>
+      <h1>This is testing</h1>
+    <script>
+   //  const data=fetch('https://jsonplaceholder.typicode.com/todos/1');
+   
+async function sohail()
+{
+  console.log("Sohail in fun");
+      let data= await fetch('https://jsonplaceholder.typicode.com/todos/1');
+     console.log(data);
+     console.log("Sohail in function aftar 1st fetch");
+    console.log("Ansari");
+      let data2= await fetch('https://jsonplaceholder.typicode.com/todos/1');
+     
+    console.log(data2);
+console.log("Ansari Sohail");
+
+ console.log("End in async");
+ }
+
+sohail();
+
+console.log("Khan");
+console.log("End");
+</script>
+</body>
+</html>
