@@ -70,7 +70,7 @@ function Summery()
     return(
         <>
            <div className=" p-4" id="summery">
-            <h1 className="header-text text-center">ORDER SUMMERY</h1>
+            <h1 className="header-text text-center">ORDER SUMMERY All</h1>
             <p className="flex
              justify-between mb-2 "><strong>Total Quantity : </strong> {totalQuantity}</p>
              
